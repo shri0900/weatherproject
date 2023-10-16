@@ -1,26 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Master</title>
-</head>
-<body>
-
-<h2>Weather Master</h2>
-
-<form id="weatherForm">
-    <label for="city">Enter City:</label>
-    <input type="text" id="city" name="city" required>
-    <button type="button" onclick="getWeather()">Submit</button>
-</form>
-
-<div id="results">
-    <p><strong>Minimum Temperature:</strong> <span id="minTemp"></span></p>
-    <p><strong>Maximum Temperature:</strong> <span id="maxTemp"></span></p>
-</div>
-
+<title>Weather Forecast</title>
 <script src="weather.js"></script>
+</head>
 
+<body>
+<h1>Weather Forecast</h1>
+<input type="text" id="city" placeholder="Enter city name">
+<button onclick="getWeather()">Get Weather</button>
+<div id="weather"></div>
 </body>
 </html>
