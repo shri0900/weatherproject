@@ -3,7 +3,7 @@ function getWeather() {
   
     // Make an HTTP request to the MuleSoft flow
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8081/getweather");
+    xhr.open("POST", "http://weathermaster.us-e2.cloudhub.io/getweather");
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify({
       city: city
