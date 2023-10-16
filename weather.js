@@ -12,7 +12,7 @@ function getWeather() {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({ city: city }),
-        mode:('no-cors')
+        
     })
     .then(response => console.log(response.body))
     .then(data => {
